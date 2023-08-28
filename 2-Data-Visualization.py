@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 warnings.filterwarnings("ignore")
 
-dataset = pd.read_csv('C:/Users/siu856309481/Downloads/Mean WVS + Econ by Country.csv')
+dataset = pd.read_csv('C:/filepath/Mean WVS + Econ by Country.csv')
 
 plot = (
     ggplot(dataset, aes(x='reorder(B_COUNTRY_ALPHA, Mean_Q3)', y='Mean_Q3', fill ='Mean_Q3'))  # Note the '-' in '-Mean_Q3' to sort in descending order
@@ -34,10 +34,10 @@ plot = (
 )
 
 # Display the plot with increased height
-plot.save('C:/Users/siu856309481/Downloads/output_plot.png', width=10, height=8, dpi = 500)
+plot.save('C:/filepath/output_plot.png', width=10, height=8, dpi = 500)
 
 # Open the saved image using PIL
-img = Image.open('C:/Users/siu856309481/Downloads/output_plot.png')
+img = Image.open('C:/filepath/output_plot.png')
 
 # Prepare to add text
 draw = ImageDraw.Draw(img)
@@ -54,4 +54,4 @@ y = img.height - textheight - 10
 draw.text((x, y), text, font=font, fill="black")
 
 # Save the image with the text
-img.save('C:/Users/siu856309481/Downloads/output_plot.png')
+img.save('C:/filepath/output_plot.png')
