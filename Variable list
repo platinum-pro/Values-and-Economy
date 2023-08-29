@@ -51,3 +51,6 @@
 # Q252 - Satisfaction with the political system performance (1 = not satisfied at all)
 ## Q253 - Respect for individual human rights nowadays (4 = a great deal of respect. Max = 4)
 ## Q254 - National pride (5 = very proud.. Max = 5)
+## regionWB = Geographic region (7 groups) [World Bank, 2019]
+## incomeWB = Income group country (Low, lower-middle, upper-middle, high) [World Bank, 2019]
+## GDPpercap1 = DP per capita, PPP (current international $) [World Bank, 2019]
